@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(20, 30px);
+    grid-template-rows: repeat(20, 30px);
+    gap: 2px;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .cell {
+    width: 30px;
+    height: 30px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+  }
+  
+  .cell.start {
+    background-color: green;
+  }
+  
+  .cell.end {
+    background-color: red;
+  }
+  
+  .cell.visited {
+    background-color: #87cefa;
+  }
+  
+  .cell.path {
+    background-color: yellow;
+  }
+  
